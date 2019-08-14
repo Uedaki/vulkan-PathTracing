@@ -19,7 +19,7 @@ void print_msg(const char *msg, Args... args)
 template <typename ...Args>
 void print_warn(const char *msg, Args... args)
 {
-	printf("%s : MESSAGE : ", __TIMESTAMP__);
+	printf("%s : WARNING : ", __TIMESTAMP__);
 	printf(msg, args...);
 	printf("\n");
 }
@@ -27,7 +27,7 @@ void print_warn(const char *msg, Args... args)
 template <typename ...Args>
 void print_crit(const char *msg, Args... args)
 {
-	printf("%s : MESSAGE : ", __TIMESTAMP__);
+	printf("%s : CRITICAL : ", __TIMESTAMP__);
 	printf(msg, args...);
 	printf("\n");
 }
